@@ -14,7 +14,7 @@ public class Order {
         state = new Preparing();
     }
 
-    public OrderState getState() {
+    public OrderState getsState() {
         return state;
     }
 
