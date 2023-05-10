@@ -1,26 +1,26 @@
 package pedido.states;
 
-import pedido.Order;
+import pedido.Pedido;
 
-public class Completed implements OrderState{
+public class Finalizado implements StatusPedido {
 
     @Override
-    public void prepare(Order order) {
+    public void prepare(Pedido pedido) {
         System.out.println("O pedido já foi finalizado");
     }
 
     @Override
-    public void ship(Order order) {
+    public void ship(Pedido pedido) {
         System.out.println("O pedido já foi finalizado");
     }
 
     @Override
-    public void receive(Order order) {
+    public void receive(Pedido pedido) {
         System.out.println("O pedido já foi finalizado");
     }
 
     @Override
-    public void complete(Order order) {
+    public void complete(Pedido pedido) {
         System.out.println("O pedido já foi finalizado");
     }
 }

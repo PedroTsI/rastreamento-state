@@ -1,4 +1,4 @@
-import pedido.Order;
+import pedido.Pedido;
 
 import java.util.Scanner;
 
@@ -18,8 +18,8 @@ public class Main {
         System.out.println("Fazendo Pedido...");
         timeout();
 
-        Order order = new Order();
+        Pedido pedido = new Pedido();
 
-        order.flow();
+        pedido.flow();
     }
 }

@@ -1,24 +1,24 @@
 package pedido;
 
-import pedido.states.OrderState;
-import pedido.states.Preparing;
+import pedido.states.StatusPedido;
+import pedido.states.Preparando;
 
 import java.util.Scanner;
 
 import static util.Timeout.timeout;
 
-public class Order {
-    OrderState state;
+public class Pedido {
+    StatusPedido state;
 
-    public Order() {
-        state = new Preparing();
+    public Pedido() {
+        state = new Preparando();
     }
 
-    public OrderState getState() {
+    public StatusPedido getState() {
         return state;
     }
 
-    public void setState(OrderState state) {
+    public void setState(StatusPedido state) {
         this.state = state;
     }
 
